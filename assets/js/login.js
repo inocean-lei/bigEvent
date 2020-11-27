@@ -34,6 +34,7 @@ $(function() {
             let pwd = $('.register input[name=password]').val();
             if (value !== pwd) {
                 return '两次输入的密码不一致';
+                // 这个return后面的内容不用layui.msg处理，这个样式layui内部处理过了
             }
         }
     });
@@ -87,8 +88,8 @@ $(function() {
                     location.href = 'index.html';
                 });
 
-            }
-        })
-    })
+            },
+        });
+    });
 
-})
+});
